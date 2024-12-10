@@ -23,6 +23,7 @@ jobs:
         uses: JetBrains/qodana-action@v2024.2
         with:
           pr-mode: false
+          args: --linter,jetbrains/qodana-cdnet:2024.2-eap
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_TOKEN_2082980299 }}
           QODANA_ENDPOINT: 'https://qodana.cloud'
